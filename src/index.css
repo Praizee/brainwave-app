@@ -17,6 +17,17 @@
   scroll-behavior: smooth;
 }
 
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Disable right-clicking */
+  /* user-drag: none; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
@@ -109,3 +120,6 @@
     transform: rotate(360deg);
   }
 }
+
+/* Made with 💙 by Stephen Adeniji
+https://stephen-adeniji.vercel.app/ */
